@@ -1,0 +1,106 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul, ol, li {
+    list-style: none;
+} 
+
+a {
+    text-decoration: none;
+}
+
+/* Estilizando os icones -> criando cada quadrado */
+
+#social-networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#social-networks li  {
+    position: relative;
+    
+    margin: 0 20px;
+
+    width: 60px;
+    height: 60px;
+
+    transform: rotate(-30deg) skew(20deg); /* Posição de todos os spans */
+
+    background: #ccc;
+}
+
+#social-networks li span {
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    transition: 0.8s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    font-size: 20px;
+}
+
+#social-networks li:hover span {
+    box-shadow: -1px 3px 3px rgba(0,0,0,.1);
+}
+
+/* Criando o efeito das camadas */
+
+#social-networks li:hover span:nth-child(5){
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+#social-networks li:hover span:nth-child(4){
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+
+#social-networks li:hover span:nth-child(3){
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+
+#social-networks li:hover span:nth-child(2){
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+
+#social-networks li:hover span:nth-child(1){
+    transform: translate(0px, 0px);
+    opacity: 0.2;
+}
+
+/* Estilizando cado span */
+
+#social-networks li:nth-child(1) span {
+    background: #3b5998;
+}
+
+#social-networks li:nth-child(2) span {
+    background: #833AB4;
+}
+
+#social-networks li:nth-child(3) span {
+    background: #2867B2;
+}
