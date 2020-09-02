@@ -5,7 +5,7 @@
 
 ##### Eu utilizei
 
-* *Conceito de camadas com `<span>`
+* Conceito de camadas com `<span>`
 * *[Como utilizar o translate](https://developer.mozilla.org/pt-BR/docs/Web/CSS/transform-function/translate)*
 * *[Transitions em CSS](https://www.w3schools.com/css/css3_transitions.asp)*
 * *[Rotate em CSS](https://www.w3schools.com/cssref/css3_pr_transform.asp)*
